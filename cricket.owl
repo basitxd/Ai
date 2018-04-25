@@ -1,0 +1,515 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#"
+     xml:base="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Played -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Played">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Cricket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Scores -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Scores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Batsman"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Century"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Double_hundred"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Fifty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Hundred"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Runs"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Triple_Hundred"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#batsman_is_out_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#batsman_is_out_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Batsman"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowled"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Catch_out"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Caught_and_bowled"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Run_out"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#bowls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#bowls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowlers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ball"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#comprises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#comprises">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Tournament"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Crowd"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Lights"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stands"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#gives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#gives">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Umpire"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Decision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#hits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#hits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Batsman"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ball"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Boundary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Four"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Sixes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#is_awarded -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#is_awarded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Players"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Man_of_the_match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#is_played -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#is_played">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ground"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#match_is -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#match_is">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#One_day"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Test_Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Twenty20"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#plays_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#plays_with">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Batsman"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#sits_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#sits_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Crowd"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Normal_Stands"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stands"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Vip_Stands"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#supervise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#supervise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Umpire"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#takes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#takes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowlers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wickets"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Awards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Awards">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowlers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Batsman"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Batsman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Batsman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Players"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Boundary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Players"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wicket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowlers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowlers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Players"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Catch_out -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Catch_out">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wicket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Caught_and_bowled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Caught_and_bowled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wicket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Century -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Century">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Cricket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Cricket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Crowd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Crowd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Decision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Decision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Umpire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Double_hundred -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Double_hundred">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Century"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Fielders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Fielders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Players"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Fifty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Fifty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Century"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Four -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Four">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Boundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Grass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Grass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Hundred -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Hundred">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Century"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Lights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Lights">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Man_of_the_match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Man_of_the_match">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Awards"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Normal_Stands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Normal_Stands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#One_day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#One_day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Pitches -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Pitches">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Ground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Players -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Players">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Run_out -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Run_out">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wicket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Runs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Runs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Batsman"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Sixes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Sixes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Boundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Test_Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Test_Match">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Tournament -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Tournament">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stadium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Triple_Hundred -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Triple_Hundred">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Century"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Twenty20 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Twenty20">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Match"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Umpire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Umpire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Vip_Stands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Vip_Stands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Stands"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wicket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wicket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wickets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Wickets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rabi-pc/ontologies/2018/3/CricketOntology#Bowlers"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
